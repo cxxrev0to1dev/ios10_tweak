@@ -1,0 +1,1179 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B07424F1E6F938A009BA139 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B07424E1E6F938A009BA139 /* Foundation.framework */; };
+		8B0742681E6F93D9009BA139 /* SSLKillSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B0742661E6F93D9009BA139 /* SSLKillSwitch.h */; };
+		8B0742691E6F93D9009BA139 /* SSLKillSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0742671E6F93D9009BA139 /* SSLKillSwitch.m */; };
+		8B07426D1E6F942D009BA139 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B07426B1E6F942D009BA139 /* fishhook.c */; };
+		8B07426E1E6F942D009BA139 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B07426C1E6F942D009BA139 /* fishhook.h */; };
+		8B0742701E6F963E009BA139 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B07426F1E6F963E009BA139 /* Security.framework */; };
+		8B0742781E6F967B009BA139 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0742751E6F967B009BA139 /* libsubstrate.dylib */; };
+		8B0742801E6FBACA009BA139 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B07427F1E6FBACA009BA139 /* CoreFoundation.framework */; };
+		8B32959B1E70EA2A00DC832A /* logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B32959A1E70EA2A00DC832A /* logger.m */; };
+		8B3CBF851E9E14420092E689 /* HookUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B3CBF7F1E9E14420092E689 /* HookUtil.h */; };
+		8B3CBF861E9E14420092E689 /* HookUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CBF801E9E14420092E689 /* HookUtil.m */; };
+		8B3CBF871E9E14420092E689 /* app_rank.h in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CBF811E9E14420092E689 /* app_rank.h */; };
+		8B3CBF881E9E14420092E689 /* Macro.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B3CBF821E9E14420092E689 /* Macro.h */; };
+		8B3CBF8A1E9E14420092E689 /* NSUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B3CBF841E9E14420092E689 /* NSUtil.h */; };
+		8B3CBF8C1E9E153B0092E689 /* app_rank.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CBF8B1E9E153B0092E689 /* app_rank.m */; };
+		8B3CBF8E1E9F17010092E689 /* Main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8B3CBF8D1E9F17010092E689 /* Main.mm */; };
+		8B6753671E6FF15000167FCB /* mobile_gestalt.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6753661E6FF15000167FCB /* mobile_gestalt.m */; };
+		8B67536A1E700E6F00167FCB /* ssl_read_write.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6753691E700E6F00167FCB /* ssl_read_write.m */; };
+		8B67536E1E70115A00167FCB /* mobile_gestalt.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B67536D1E70115A00167FCB /* mobile_gestalt.h */; };
+		8B6753701E7011E000167FCB /* ssl_read_write.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B67536F1E7011E000167FCB /* ssl_read_write.h */; };
+		8B6753721E70239C00167FCB /* libMobileGestalt.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6753711E70239C00167FCB /* libMobileGestalt.tbd */; };
+		8BD6CF991E792E640053C7F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B07424E1E6F938A009BA139 /* Foundation.framework */; };
+		8BD6CFAF1E792EB50053C7F7 /* iosapps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BD6CFAD1E792EB50053C7F7 /* iosapps.cpp */; };
+		8BD6CFB01E792EB50053C7F7 /* mongoose.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BD6CFAE1E792EB50053C7F7 /* mongoose.c */; };
+		8BD6CFBB1E7A245B0053C7F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B07424E1E6F938A009BA139 /* Foundation.framework */; };
+		8BD6CFD01E7A24F60053C7F7 /* keybag.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD6CFCF1E7A24F60053C7F7 /* keybag.m */; };
+		8BD6CFD21E7A25580053C7F7 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD6CFD11E7A25580053C7F7 /* libsqlite3.tbd */; };
+		8BD6CFD41E7A256C0053C7F7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD6CFD31E7A256C0053C7F7 /* MobileCoreServices.framework */; };
+		8BD6CFD51E7A257D0053C7F7 /* libMobileGestalt.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B6753711E70239C00167FCB /* libMobileGestalt.tbd */; };
+		8BD6CFD61E7A25AD0053C7F7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B07426F1E6F963E009BA139 /* Security.framework */; };
+		8BF23C461E714AA0001213BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF23C451E714AA0001213BD /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B2DCE601EB08E290092733A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B2DCE5C1EB08E290092733A /* auto_click.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8BC5D5B81EAF3C2E008FD1A8;
+			remoteInfo = auto_click;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B07424B1E6F938A009BA139 /* corehook.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = corehook.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B07424E1E6F938A009BA139 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8B0742531E6F938A009BA139 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		8B0742541E6F938A009BA139 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		8B07425E1E6F938A009BA139 /* corehook.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = corehook.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/corehook.plist; sourceTree = "<group>"; };
+		8B0742661E6F93D9009BA139 /* SSLKillSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSLKillSwitch.h; path = src/ssl_kill_switch/SSLKillSwitch.h; sourceTree = "<group>"; };
+		8B0742671E6F93D9009BA139 /* SSLKillSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSLKillSwitch.m; path = src/ssl_kill_switch/SSLKillSwitch.m; sourceTree = "<group>"; };
+		8B07426B1E6F942D009BA139 /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = src/ssl_kill_switch/fishhook/fishhook.c; sourceTree = "<group>"; };
+		8B07426C1E6F942D009BA139 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = src/ssl_kill_switch/fishhook/fishhook.h; sourceTree = "<group>"; };
+		8B07426F1E6F963E009BA139 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8B0742751E6F967B009BA139 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = src/third_party/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+		8B07427F1E6FBACA009BA139 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		8B19A6461E7A31A500704B60 /* ent.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ent.xml; sourceTree = "<group>"; };
+		8B2DCE5C1EB08E290092733A /* auto_click.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = auto_click.xcodeproj; path = auto_click/auto_click.xcodeproj; sourceTree = "<group>"; };
+		8B32959A1E70EA2A00DC832A /* logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = logger.m; path = src/logger/logger.m; sourceTree = "<group>"; };
+		8B3CBF7F1E9E14420092E689 /* HookUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HookUtil.h; path = src/app_rank/HookUtil.h; sourceTree = "<group>"; };
+		8B3CBF801E9E14420092E689 /* HookUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HookUtil.m; path = src/app_rank/HookUtil.m; sourceTree = "<group>"; };
+		8B3CBF811E9E14420092E689 /* app_rank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = app_rank.h; path = src/app_rank/app_rank.h; sourceTree = "<group>"; };
+		8B3CBF821E9E14420092E689 /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Macro.h; path = src/app_rank/Macro.h; sourceTree = "<group>"; };
+		8B3CBF841E9E14420092E689 /* NSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSUtil.h; path = src/app_rank/NSUtil.h; sourceTree = "<group>"; };
+		8B3CBF8B1E9E153B0092E689 /* app_rank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = app_rank.m; path = src/app_rank/app_rank.m; sourceTree = "<group>"; };
+		8B3CBF8D1E9F17010092E689 /* Main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Main.mm; path = src/app_rank/Main.mm; sourceTree = "<group>"; };
+		8B6753661E6FF15000167FCB /* mobile_gestalt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = mobile_gestalt.m; path = src/mobile_gestalt/mobile_gestalt.m; sourceTree = "<group>"; };
+		8B6753691E700E6F00167FCB /* ssl_read_write.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ssl_read_write.m; path = src/ssl_read_write/ssl_read_write.m; sourceTree = "<group>"; };
+		8B67536D1E70115A00167FCB /* mobile_gestalt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mobile_gestalt.h; path = src/mobile_gestalt/mobile_gestalt.h; sourceTree = "<group>"; };
+		8B67536F1E7011E000167FCB /* ssl_read_write.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ssl_read_write.h; path = src/ssl_read_write/ssl_read_write.h; sourceTree = "<group>"; };
+		8B6753711E70239C00167FCB /* libMobileGestalt.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libMobileGestalt.tbd; path = usr/lib/libMobileGestalt.tbd; sourceTree = SDKROOT; };
+		8BA87AEE1E9623AD00A57F86 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		8BA87AEF1E9623AD00A57F86 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		8BA87AF11E9623AD00A57F86 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		8BA87AF21E9623AD00A57F86 /* optimization-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "optimization-Prefix.pch"; sourceTree = "<group>"; };
+		8BA87AF91E9623AD00A57F86 /* optimization.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = optimization.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/optimization.plist; sourceTree = "<group>"; };
+		8BA87AFE1E96240000A57F86 /* html_hook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = html_hook.m; path = src/html_hook.m; sourceTree = "<group>"; };
+		8BA87B021E96242500A57F86 /* HookUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HookUtil.h; path = src/HookUtil.h; sourceTree = "<group>"; };
+		8BA87B031E96242500A57F86 /* HookUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HookUtil.m; path = src/HookUtil.m; sourceTree = "<group>"; };
+		8BA87B041E96242500A57F86 /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Macro.h; path = src/Macro.h; sourceTree = "<group>"; };
+		8BA87B051E96242500A57F86 /* NSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSUtil.h; path = src/NSUtil.h; sourceTree = "<group>"; };
+		8BA87B0A1E96249D00A57F86 /* Main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Main.mm; path = src/Main.mm; sourceTree = "<group>"; };
+		8BA87B0E1E96271800A57F86 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		8BD6CF981E792E640053C7F7 /* hijackapp.bin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = hijackapp.bin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD6CF9D1E792E640053C7F7 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		8BD6CF9E1E792E640053C7F7 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		8BD6CFA01E792E640053C7F7 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		8BD6CFA11E792E640053C7F7 /* hijackapp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hijackapp-Prefix.pch"; sourceTree = "<group>"; };
+		8BD6CFA81E792E640053C7F7 /* hijackapp.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = hijackapp.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/hijackapp.plist; sourceTree = "<group>"; };
+		8BD6CFAD1E792EB50053C7F7 /* iosapps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = iosapps.cpp; path = src/iosapps.cpp; sourceTree = "<group>"; };
+		8BD6CFAE1E792EB50053C7F7 /* mongoose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mongoose.c; path = src/mongoose.c; sourceTree = "<group>"; };
+		8BD6CFBA1E7A245B0053C7F7 /* keybag.bin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = keybag.bin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD6CFBF1E7A245B0053C7F7 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		8BD6CFC01E7A245B0053C7F7 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		8BD6CFC21E7A245B0053C7F7 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		8BD6CFCA1E7A245B0053C7F7 /* keybag.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = keybag.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/keybag.plist; sourceTree = "<group>"; };
+		8BD6CFCF1E7A24F60053C7F7 /* keybag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = keybag.m; path = src/keybag.m; sourceTree = "<group>"; };
+		8BD6CFD11E7A25580053C7F7 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		8BD6CFD31E7A256C0053C7F7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8BF23C451E714AA0001213BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B0742471E6F938A009BA139 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BF23C461E714AA0001213BD /* UIKit.framework in Frameworks */,
+				8B6753721E70239C00167FCB /* libMobileGestalt.tbd in Frameworks */,
+				8B0742801E6FBACA009BA139 /* CoreFoundation.framework in Frameworks */,
+				8B0742701E6F963E009BA139 /* Security.framework in Frameworks */,
+				8B07424F1E6F938A009BA139 /* Foundation.framework in Frameworks */,
+				8B0742781E6F967B009BA139 /* libsubstrate.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD6CF941E792E640053C7F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD6CF991E792E640053C7F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD6CFB61E7A245B0053C7F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD6CFD61E7A25AD0053C7F7 /* Security.framework in Frameworks */,
+				8BD6CFD51E7A257D0053C7F7 /* libMobileGestalt.tbd in Frameworks */,
+				8BD6CFD41E7A256C0053C7F7 /* MobileCoreServices.framework in Frameworks */,
+				8BD6CFD21E7A25580053C7F7 /* libsqlite3.tbd in Frameworks */,
+				8BD6CFBB1E7A245B0053C7F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B0742401E6F938A009BA139 = {
+			isa = PBXGroup;
+			children = (
+				8B2DCE5C1EB08E290092733A /* auto_click.xcodeproj */,
+				8B0742501E6F938A009BA139 /* corehook */,
+				8BD6CF9A1E792E640053C7F7 /* hijackapp */,
+				8BD6CFBC1E7A245B0053C7F7 /* keybag */,
+				8BA87AEB1E9623AD00A57F86 /* optimization */,
+				8B07424D1E6F938A009BA139 /* Frameworks */,
+				8B07424C1E6F938A009BA139 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B07424C1E6F938A009BA139 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B07424B1E6F938A009BA139 /* corehook.dylib */,
+				8BD6CF981E792E640053C7F7 /* hijackapp.bin */,
+				8BD6CFBA1E7A245B0053C7F7 /* keybag.bin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B07424D1E6F938A009BA139 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BA87B0E1E96271800A57F86 /* libstdc++.tbd */,
+				8BD6CFD31E7A256C0053C7F7 /* MobileCoreServices.framework */,
+				8BD6CFD11E7A25580053C7F7 /* libsqlite3.tbd */,
+				8BF23C451E714AA0001213BD /* UIKit.framework */,
+				8B6753711E70239C00167FCB /* libMobileGestalt.tbd */,
+				8B07427F1E6FBACA009BA139 /* CoreFoundation.framework */,
+				8B07426F1E6F963E009BA139 /* Security.framework */,
+				8B07424E1E6F938A009BA139 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B0742501E6F938A009BA139 /* corehook */ = {
+			isa = PBXGroup;
+			children = (
+				8B0742641E6F93BB009BA139 /* src */,
+				8B0742511E6F938A009BA139 /* Package */,
+			);
+			path = corehook;
+			sourceTree = "<group>";
+		};
+		8B0742511E6F938A009BA139 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				8B0742521E6F938A009BA139 /* DEBIAN */,
+				8B07425B1E6F938A009BA139 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		8B0742521E6F938A009BA139 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				8B0742531E6F938A009BA139 /* control.txt */,
+				8B0742541E6F938A009BA139 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		8B07425B1E6F938A009BA139 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				8B07425C1E6F938A009BA139 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		8B07425C1E6F938A009BA139 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				8B07425D1E6F938A009BA139 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		8B07425D1E6F938A009BA139 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				8B07425E1E6F938A009BA139 /* corehook.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		8B0742641E6F93BB009BA139 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8B3CBF7E1E9E142C0092E689 /* app_rank */,
+				8B3295991E70EA1B00DC832A /* logger */,
+				8B6753681E700E6000167FCB /* ssl_read_write */,
+				8B6753651E6FF14200167FCB /* mobile_gestalt */,
+				8B0742711E6F965D009BA139 /* third_party */,
+				8B0742651E6F93C6009BA139 /* ssl_kill_switch */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		8B0742651E6F93C6009BA139 /* ssl_kill_switch */ = {
+			isa = PBXGroup;
+			children = (
+				8B07426A1E6F941E009BA139 /* fishhook */,
+				8B0742661E6F93D9009BA139 /* SSLKillSwitch.h */,
+				8B0742671E6F93D9009BA139 /* SSLKillSwitch.m */,
+			);
+			name = ssl_kill_switch;
+			sourceTree = "<group>";
+		};
+		8B07426A1E6F941E009BA139 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				8B07426B1E6F942D009BA139 /* fishhook.c */,
+				8B07426C1E6F942D009BA139 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+		8B0742711E6F965D009BA139 /* third_party */ = {
+			isa = PBXGroup;
+			children = (
+				8B0742721E6F9666009BA139 /* lib */,
+			);
+			name = third_party;
+			sourceTree = "<group>";
+		};
+		8B0742721E6F9666009BA139 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				8B0742751E6F967B009BA139 /* libsubstrate.dylib */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		8B2DCE5D1EB08E290092733A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B2DCE611EB08E290092733A /* auto_click.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B3295991E70EA1B00DC832A /* logger */ = {
+			isa = PBXGroup;
+			children = (
+				8B32959A1E70EA2A00DC832A /* logger.m */,
+			);
+			name = logger;
+			sourceTree = "<group>";
+		};
+		8B3CBF7E1E9E142C0092E689 /* app_rank */ = {
+			isa = PBXGroup;
+			children = (
+				8B3CBF8D1E9F17010092E689 /* Main.mm */,
+				8B3CBF8B1E9E153B0092E689 /* app_rank.m */,
+				8B3CBF7F1E9E14420092E689 /* HookUtil.h */,
+				8B3CBF801E9E14420092E689 /* HookUtil.m */,
+				8B3CBF811E9E14420092E689 /* app_rank.h */,
+				8B3CBF821E9E14420092E689 /* Macro.h */,
+				8B3CBF841E9E14420092E689 /* NSUtil.h */,
+			);
+			name = app_rank;
+			sourceTree = "<group>";
+		};
+		8B6753651E6FF14200167FCB /* mobile_gestalt */ = {
+			isa = PBXGroup;
+			children = (
+				8B67536D1E70115A00167FCB /* mobile_gestalt.h */,
+				8B6753661E6FF15000167FCB /* mobile_gestalt.m */,
+			);
+			name = mobile_gestalt;
+			sourceTree = "<group>";
+		};
+		8B6753681E700E6000167FCB /* ssl_read_write */ = {
+			isa = PBXGroup;
+			children = (
+				8B67536F1E7011E000167FCB /* ssl_read_write.h */,
+				8B6753691E700E6F00167FCB /* ssl_read_write.m */,
+			);
+			name = ssl_read_write;
+			sourceTree = "<group>";
+		};
+		8BA87AEB1E9623AD00A57F86 /* optimization */ = {
+			isa = PBXGroup;
+			children = (
+				8BA87AFD1E9623ED00A57F86 /* src */,
+				8BA87AEC1E9623AD00A57F86 /* Package */,
+				8BA87AF01E9623AD00A57F86 /* Supporting Files */,
+			);
+			path = optimization;
+			sourceTree = "<group>";
+		};
+		8BA87AEC1E9623AD00A57F86 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				8BA87AED1E9623AD00A57F86 /* DEBIAN */,
+				8BA87AF61E9623AD00A57F86 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		8BA87AED1E9623AD00A57F86 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				8BA87AEE1E9623AD00A57F86 /* control.txt */,
+				8BA87AEF1E9623AD00A57F86 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		8BA87AF01E9623AD00A57F86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BA87AF11E9623AD00A57F86 /* PackageVersion.plist */,
+				8BA87AF21E9623AD00A57F86 /* optimization-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BA87AF61E9623AD00A57F86 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				8BA87AF71E9623AD00A57F86 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		8BA87AF71E9623AD00A57F86 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				8BA87AF81E9623AD00A57F86 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		8BA87AF81E9623AD00A57F86 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				8BA87AF91E9623AD00A57F86 /* optimization.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		8BA87AFD1E9623ED00A57F86 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8BA87B0A1E96249D00A57F86 /* Main.mm */,
+				8BA87B021E96242500A57F86 /* HookUtil.h */,
+				8BA87B031E96242500A57F86 /* HookUtil.m */,
+				8BA87B041E96242500A57F86 /* Macro.h */,
+				8BA87B051E96242500A57F86 /* NSUtil.h */,
+				8BA87AFE1E96240000A57F86 /* html_hook.m */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		8BD6CF9A1E792E640053C7F7 /* hijackapp */ = {
+			isa = PBXGroup;
+			children = (
+				8BD6CFAC1E792EA50053C7F7 /* src */,
+				8BD6CF9B1E792E640053C7F7 /* Package */,
+				8BD6CF9F1E792E640053C7F7 /* Supporting Files */,
+			);
+			path = hijackapp;
+			sourceTree = "<group>";
+		};
+		8BD6CF9B1E792E640053C7F7 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				8BD6CF9C1E792E640053C7F7 /* DEBIAN */,
+				8BD6CFA51E792E640053C7F7 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		8BD6CF9C1E792E640053C7F7 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				8BD6CF9D1E792E640053C7F7 /* control.txt */,
+				8BD6CF9E1E792E640053C7F7 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		8BD6CF9F1E792E640053C7F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BD6CFA01E792E640053C7F7 /* PackageVersion.plist */,
+				8BD6CFA11E792E640053C7F7 /* hijackapp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BD6CFA51E792E640053C7F7 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				8BD6CFA61E792E640053C7F7 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		8BD6CFA61E792E640053C7F7 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				8BD6CFA71E792E640053C7F7 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		8BD6CFA71E792E640053C7F7 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				8BD6CFA81E792E640053C7F7 /* hijackapp.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		8BD6CFAC1E792EA50053C7F7 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8BD6CFAD1E792EB50053C7F7 /* iosapps.cpp */,
+				8BD6CFAE1E792EB50053C7F7 /* mongoose.c */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		8BD6CFBC1E7A245B0053C7F7 /* keybag */ = {
+			isa = PBXGroup;
+			children = (
+				8BD6CFCE1E7A24EA0053C7F7 /* src */,
+				8BD6CFBD1E7A245B0053C7F7 /* Package */,
+				8BD6CFC11E7A245B0053C7F7 /* Supporting Files */,
+			);
+			path = keybag;
+			sourceTree = "<group>";
+		};
+		8BD6CFBD1E7A245B0053C7F7 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				8BD6CFBE1E7A245B0053C7F7 /* DEBIAN */,
+				8BD6CFC71E7A245B0053C7F7 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		8BD6CFBE1E7A245B0053C7F7 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				8BD6CFBF1E7A245B0053C7F7 /* control.txt */,
+				8BD6CFC01E7A245B0053C7F7 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		8BD6CFC11E7A245B0053C7F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B19A6461E7A31A500704B60 /* ent.xml */,
+				8BD6CFC21E7A245B0053C7F7 /* PackageVersion.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BD6CFC71E7A245B0053C7F7 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				8BD6CFC81E7A245B0053C7F7 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		8BD6CFC81E7A245B0053C7F7 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				8BD6CFC91E7A245B0053C7F7 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		8BD6CFC91E7A245B0053C7F7 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				8BD6CFCA1E7A245B0053C7F7 /* keybag.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		8BD6CFCE1E7A24EA0053C7F7 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8BD6CFCF1E7A24F60053C7F7 /* keybag.m */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8B0742481E6F938A009BA139 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B3CBF8A1E9E14420092E689 /* NSUtil.h in Headers */,
+				8B0742681E6F93D9009BA139 /* SSLKillSwitch.h in Headers */,
+				8B67536E1E70115A00167FCB /* mobile_gestalt.h in Headers */,
+				8B3CBF851E9E14420092E689 /* HookUtil.h in Headers */,
+				8B3CBF881E9E14420092E689 /* Macro.h in Headers */,
+				8B6753701E7011E000167FCB /* ssl_read_write.h in Headers */,
+				8B07426E1E6F942D009BA139 /* fishhook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD6CF951E792E640053C7F7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD6CFB71E7A245B0053C7F7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8B07424A1E6F938A009BA139 /* corehook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B0742611E6F938A009BA139 /* Build configuration list for PBXNativeTarget "corehook" */;
+			buildPhases = (
+				8BC2D44B1E791F82006D5677 /* ShellScript */,
+				8B0742461E6F938A009BA139 /* Sources */,
+				8B0742471E6F938A009BA139 /* Frameworks */,
+				8B0742481E6F938A009BA139 /* Headers */,
+				8BC2D44A1E791F04006D5677 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = corehook;
+			productName = corehook;
+			productReference = 8B07424B1E6F938A009BA139 /* corehook.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		8BD6CF971E792E640053C7F7 /* hijackapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BD6CFA91E792E640053C7F7 /* Build configuration list for PBXNativeTarget "hijackapp" */;
+			buildPhases = (
+				8BD6CF921E792E640053C7F7 /* ShellScript */,
+				8BD6CF931E792E640053C7F7 /* Sources */,
+				8BD6CF941E792E640053C7F7 /* Frameworks */,
+				8BD6CF951E792E640053C7F7 /* Headers */,
+				8BD6CF961E792E640053C7F7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hijackapp;
+			productName = hijackapp;
+			productReference = 8BD6CF981E792E640053C7F7 /* hijackapp.bin */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		8BD6CFB91E7A245B0053C7F7 /* keybag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BD6CFCD1E7A245B0053C7F7 /* Build configuration list for PBXNativeTarget "keybag" */;
+			buildPhases = (
+				8BD6CFB41E7A245B0053C7F7 /* ShellScript */,
+				8BD6CFB51E7A245B0053C7F7 /* Sources */,
+				8BD6CFB61E7A245B0053C7F7 /* Frameworks */,
+				8BD6CFB71E7A245B0053C7F7 /* Headers */,
+				8BD6CFB81E7A245B0053C7F7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = keybag;
+			productName = keybag;
+			productReference = 8BD6CFBA1E7A245B0053C7F7 /* keybag.bin */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B0742411E6F938A009BA139 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					8B07424A1E6F938A009BA139 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					8BD6CF971E792E640053C7F7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					8BD6CFB91E7A245B0053C7F7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8B0742441E6F938A009BA139 /* Build configuration list for PBXProject "corehook" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B0742401E6F938A009BA139;
+			productRefGroup = 8B07424C1E6F938A009BA139 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8B2DCE5D1EB08E290092733A /* Products */;
+					ProjectRef = 8B2DCE5C1EB08E290092733A /* auto_click.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8B07424A1E6F938A009BA139 /* corehook */,
+				8BD6CF971E792E640053C7F7 /* hijackapp */,
+				8BD6CFB91E7A245B0053C7F7 /* keybag */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8B2DCE611EB08E290092733A /* auto_click.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = auto_click.dylib;
+			remoteRef = 8B2DCE601EB08E290092733A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8BC2D44A1E791F04006D5677 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+		8BC2D44B1E791F82006D5677 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		8BD6CF921E792E640053C7F7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		8BD6CF961E792E640053C7F7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+		8BD6CFB41E7A245B0053C7F7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		8BD6CFB81E7A245B0053C7F7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B0742461E6F938A009BA139 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B3CBF8E1E9F17010092E689 /* Main.mm in Sources */,
+				8B3CBF861E9E14420092E689 /* HookUtil.m in Sources */,
+				8B3CBF8C1E9E153B0092E689 /* app_rank.m in Sources */,
+				8B67536A1E700E6F00167FCB /* ssl_read_write.m in Sources */,
+				8B0742691E6F93D9009BA139 /* SSLKillSwitch.m in Sources */,
+				8B07426D1E6F942D009BA139 /* fishhook.c in Sources */,
+				8B3CBF871E9E14420092E689 /* app_rank.h in Sources */,
+				8B32959B1E70EA2A00DC832A /* logger.m in Sources */,
+				8B6753671E6FF15000167FCB /* mobile_gestalt.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD6CF931E792E640053C7F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD6CFB01E792EB50053C7F7 /* mongoose.c in Sources */,
+				8BD6CFAF1E792EB50053C7F7 /* iosapps.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BD6CFB51E7A245B0053C7F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD6CFD01E7A24F60053C7F7 /* keybag.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8B07425F1E6F938A009BA139 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevBuildPackageOnAnyBuild = YES;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 127.0.0.1;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = NO;
+			};
+			name = Debug;
+		};
+		8B0742601E6F938A009BA139 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevBuildPackageOnAnyBuild = YES;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 127.0.0.1;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = NO;
+			};
+			name = Release;
+		};
+		8B0742621E6F938A009BA139 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					"armv7,armv7s,arm64",
+				);
+				CODE_SIGN_ENTITLEMENTS = ent.xml;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9J9K2QW6UF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					SUBSTRATE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/include/**",
+					"$(PROJECT_DIR)/corehook/src",
+				);
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/hijackapp/PackageVersion.plist";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/corehook/src/third_party/lib",
+				);
+				MACH_O_TYPE = mh_dylib;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zbk.corehook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				iOSOpenDevBuildPackageOnAnyBuild = YES;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = iPhone;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = NO;
+			};
+			name = Debug;
+		};
+		8B0742631E6F938A009BA139 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					"armv7,armv7s,arm64",
+				);
+				CODE_SIGN_ENTITLEMENTS = ent.xml;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9J9K2QW6UF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = SUBSTRATE_BUILD;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/include/**",
+					"$(PROJECT_DIR)/corehook/src",
+				);
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/hijackapp/PackageVersion.plist";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/corehook/src/third_party/lib",
+				);
+				MACH_O_TYPE = mh_dylib;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zbk.corehook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevBuildPackageOnAnyBuild = YES;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = iPhone;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = NO;
+			};
+			name = Release;
+		};
+		8BD6CFAA1E792E640053C7F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					"armv7,armv7s,arm64",
+				);
+				CODE_SIGN_ENTITLEMENTS = ent.xml;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9J9K2QW6UF;
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				DYLIB_INSTALL_NAME_BASE = "$(INSTALL_PATH)";
+				EXECUTABLE_EXTENSION = bin;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				INSTALL_PATH = /usr/bin;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_DYLIB_INSTALL_NAME = "$(DYLIB_INSTALL_NAME_BASE:standardizepath)/$(EXECUTABLE_PATH)";
+				LD_NO_PIE = NO;
+				MACH_O_TYPE = mh_execute;
+				OTHER_CFLAGS = "-DMG_ENABLE_THREADS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				iOSOpenDevBuildPackageOnAnyBuild = YES;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = NO;
+			};
+			name = Debug;
+		};
+		8BD6CFAB1E792E640053C7F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					"armv7,armv7s,arm64",
+				);
+				CODE_SIGN_ENTITLEMENTS = ent.xml;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9J9K2QW6UF;
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				DYLIB_INSTALL_NAME_BASE = "$(INSTALL_PATH)";
+				EXECUTABLE_EXTENSION = bin;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				INSTALL_PATH = /usr/bin;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_DYLIB_INSTALL_NAME = "$(DYLIB_INSTALL_NAME_BASE:standardizepath)/$(EXECUTABLE_PATH)";
+				LD_NO_PIE = NO;
+				MACH_O_TYPE = mh_execute;
+				OTHER_CFLAGS = "-DMG_ENABLE_THREADS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				iOSOpenDevBuildPackageOnAnyBuild = YES;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = NO;
+			};
+			name = Release;
+		};
+		8BD6CFCB1E7A245B0053C7F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					"armv7,armv7s,arm64",
+				);
+				CODE_SIGN_ENTITLEMENTS = ent.xml;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9J9K2QW6UF;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = bin;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/hijackapp/PackageVersion.plist";
+				INSTALL_PATH = /usr/bin;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = mh_execute;
+				OTHER_CFLAGS = (
+					"-arch",
+					armv7,
+					"-arch",
+					armv7s,
+					"-arch",
+					arm64,
+				);
+				OTHER_CODE_SIGN_FLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RESOURCES_TARGETED_DEVICE_FAMILY = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				iOSOpenDevBuildPackageOnAnyBuild = YES;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = NO;
+			};
+			name = Debug;
+		};
+		8BD6CFCC1E7A245B0053C7F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					"armv7,armv7s,arm64",
+				);
+				CODE_SIGN_ENTITLEMENTS = ent.xml;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9J9K2QW6UF;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_EXTENSION = bin;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/hijackapp/PackageVersion.plist";
+				INSTALL_PATH = /usr/bin;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = mh_execute;
+				OTHER_CFLAGS = (
+					"-arch",
+					armv7,
+					"-arch",
+					armv7s,
+					"-arch",
+					arm64,
+				);
+				OTHER_CODE_SIGN_FLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RESOURCES_TARGETED_DEVICE_FAMILY = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				iOSOpenDevBuildPackageOnAnyBuild = YES;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B0742441E6F938A009BA139 /* Build configuration list for PBXProject "corehook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B07425F1E6F938A009BA139 /* Debug */,
+				8B0742601E6F938A009BA139 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B0742611E6F938A009BA139 /* Build configuration list for PBXNativeTarget "corehook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B0742621E6F938A009BA139 /* Debug */,
+				8B0742631E6F938A009BA139 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BD6CFA91E792E640053C7F7 /* Build configuration list for PBXNativeTarget "hijackapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BD6CFAA1E792E640053C7F7 /* Debug */,
+				8BD6CFAB1E792E640053C7F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BD6CFCD1E7A245B0053C7F7 /* Build configuration list for PBXNativeTarget "keybag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BD6CFCB1E7A245B0053C7F7 /* Debug */,
+				8BD6CFCC1E7A245B0053C7F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B0742411E6F938A009BA139 /* Project object */;
+}

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+killall -9 hijackapp.bin
+rm -f /usr/bin/hijackapp.bin
+killall -9 hijackapp.bin
+rm -f /usr/bin/hijackapp.bin
+killall -9 hijackapp.bin
+killall -9 hijackapp.bin
+killall -9 hijackapp.bin
+killall -9 hijackapp.bin
+rm -f /usr/bin/hijackapp.bin

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'auto_click' target in the 'auto_click' project
+//
+
+#ifdef __OBJC__
+  #import <Foundation/Foundation.h>
+#endif

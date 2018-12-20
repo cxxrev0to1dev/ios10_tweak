@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BC5D5BC1EAF3C2E008FD1A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC5D5BB1EAF3C2E008FD1A8 /* Foundation.framework */; };
+		8BC5D5D81EAF3D3C008FD1A8 /* app_clear_policy.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC5D5D21EAF3D3C008FD1A8 /* app_clear_policy.h */; };
+		8BC5D5D91EAF3D3C008FD1A8 /* app_clear_policy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D5D31EAF3D3C008FD1A8 /* app_clear_policy.m */; };
+		8BC5D5DA1EAF3D3C008FD1A8 /* app_flow_policy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D5D41EAF3D3C008FD1A8 /* app_flow_policy.m */; };
+		8BC5D5DB1EAF3D3C008FD1A8 /* NSTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC5D5D51EAF3D3C008FD1A8 /* NSTask.h */; };
+		8BC5D5DC1EAF3D3C008FD1A8 /* OpenUDID.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC5D5D61EAF3D3C008FD1A8 /* OpenUDID.h */; };
+		8BC5D5DD1EAF3D3C008FD1A8 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D5D71EAF3D3C008FD1A8 /* OpenUDID.m */; };
+		8BC5D5E01EAF3DCF008FD1A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC5D5DF1EAF3DCF008FD1A8 /* UIKit.framework */; };
+		8BC5D5E21EAF3DEE008FD1A8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC5D5E11EAF3DEE008FD1A8 /* AdSupport.framework */; };
+		8BC5D5E41EAF41BA008FD1A8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC5D5E31EAF41B9008FD1A8 /* CoreTelephony.framework */; };
+		8BC5D5F11EAF4541008FD1A8 /* UIDevice-Capabilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC5D5E71EAF4541008FD1A8 /* UIDevice-Capabilities.h */; };
+		8BC5D5F21EAF4541008FD1A8 /* UIDevice-Capabilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D5E81EAF4541008FD1A8 /* UIDevice-Capabilities.m */; };
+		8BC5D5F31EAF4541008FD1A8 /* UIDevice-Hardware.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC5D5E91EAF4541008FD1A8 /* UIDevice-Hardware.h */; };
+		8BC5D5F41EAF4541008FD1A8 /* UIDevice-Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D5EA1EAF4541008FD1A8 /* UIDevice-Hardware.m */; };
+		8BC5D5F51EAF4541008FD1A8 /* UIDevice-IOKitExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC5D5EB1EAF4541008FD1A8 /* UIDevice-IOKitExtensions.h */; };
+		8BC5D5F61EAF4541008FD1A8 /* UIDevice-IOKitExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D5EC1EAF4541008FD1A8 /* UIDevice-IOKitExtensions.m */; };
+		8BC5D5F71EAF4541008FD1A8 /* UIDevice-Orientation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC5D5ED1EAF4541008FD1A8 /* UIDevice-Orientation.h */; };
+		8BC5D5F81EAF4541008FD1A8 /* UIDevice-Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D5EE1EAF4541008FD1A8 /* UIDevice-Orientation.m */; };
+		8BC5D5F91EAF4541008FD1A8 /* UIDevice-Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC5D5EF1EAF4541008FD1A8 /* UIDevice-Reachability.h */; };
+		8BC5D5FA1EAF4541008FD1A8 /* UIDevice-Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D5F01EAF4541008FD1A8 /* UIDevice-Reachability.m */; };
+		8BC5D5FC1EAF46F1008FD1A8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC5D5FB1EAF46F1008FD1A8 /* SystemConfiguration.framework */; };
+		8BC5D5FF1EAF479D008FD1A8 /* wwanconnect.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5D5FD1EAF479D008FD1A8 /* wwanconnect.c */; };
+		8BC5D6001EAF479D008FD1A8 /* wwanconnect.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BC5D5FE1EAF479D008FD1A8 /* wwanconnect.h */; };
+		8BF1CD1A1EAF590200C11F00 /* IOKitKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF1CD121EAF590200C11F00 /* IOKitKeys.h */; };
+		8BF1CD1B1EAF590200C11F00 /* IOKitLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF1CD131EAF590200C11F00 /* IOKitLib.h */; };
+		8BF1CD1C1EAF590200C11F00 /* IOMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF1CD141EAF590200C11F00 /* IOMessage.h */; };
+		8BF1CD1D1EAF590200C11F00 /* IOReturn.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF1CD151EAF590200C11F00 /* IOReturn.h */; };
+		8BF1CD1E1EAF590200C11F00 /* IOTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF1CD161EAF590200C11F00 /* IOTypes.h */; };
+		8BF1CD1F1EAF590200C11F00 /* OSKext.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF1CD171EAF590200C11F00 /* OSKext.h */; };
+		8BF1CD201EAF590200C11F00 /* OSMessageNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF1CD181EAF590200C11F00 /* OSMessageNotification.h */; };
+		8BF1CD281EAF5C2200C11F00 /* IOKit.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF1CD271EAF5C2200C11F00 /* IOKit.tbd */; };
+		8BF1CD2A1EAF610F00C11F00 /* app_flow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8BF1CD291EAF610F00C11F00 /* app_flow.mm */; };
+		8BF1CD2C1EAF62A200C11F00 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF1CD2B1EAF62A200C11F00 /* libsubstrate.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8BC5D5B81EAF3C2E008FD1A8 /* auto_click.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = auto_click.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BC5D5BB1EAF3C2E008FD1A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8BC5D5C01EAF3C2E008FD1A8 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		8BC5D5C11EAF3C2E008FD1A8 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		8BC5D5C31EAF3C2E008FD1A8 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		8BC5D5C41EAF3C2E008FD1A8 /* auto_click-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "auto_click-Prefix.pch"; sourceTree = "<group>"; };
+		8BC5D5CB1EAF3C2E008FD1A8 /* auto_click.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = auto_click.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/auto_click.plist; sourceTree = "<group>"; };
+		8BC5D5D11EAF3D3C008FD1A8 /* app_flow.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = app_flow.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		8BC5D5D21EAF3D3C008FD1A8 /* app_clear_policy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = app_clear_policy.h; sourceTree = "<group>"; };
+		8BC5D5D31EAF3D3C008FD1A8 /* app_clear_policy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = app_clear_policy.m; sourceTree = "<group>"; };
+		8BC5D5D41EAF3D3C008FD1A8 /* app_flow_policy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = app_flow_policy.m; sourceTree = "<group>"; };
+		8BC5D5D51EAF3D3C008FD1A8 /* NSTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTask.h; sourceTree = "<group>"; };
+		8BC5D5D61EAF3D3C008FD1A8 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
+		8BC5D5D71EAF3D3C008FD1A8 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
+		8BC5D5DF1EAF3DCF008FD1A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8BC5D5E11EAF3DEE008FD1A8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		8BC5D5E31EAF41B9008FD1A8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		8BC5D5E71EAF4541008FD1A8 /* UIDevice-Capabilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice-Capabilities.h"; path = "third_party/uidevice-extension/UIDevice-Capabilities.h"; sourceTree = "<group>"; };
+		8BC5D5E81EAF4541008FD1A8 /* UIDevice-Capabilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice-Capabilities.m"; path = "third_party/uidevice-extension/UIDevice-Capabilities.m"; sourceTree = "<group>"; };
+		8BC5D5E91EAF4541008FD1A8 /* UIDevice-Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice-Hardware.h"; path = "third_party/uidevice-extension/UIDevice-Hardware.h"; sourceTree = "<group>"; };
+		8BC5D5EA1EAF4541008FD1A8 /* UIDevice-Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice-Hardware.m"; path = "third_party/uidevice-extension/UIDevice-Hardware.m"; sourceTree = "<group>"; };
+		8BC5D5EB1EAF4541008FD1A8 /* UIDevice-IOKitExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice-IOKitExtensions.h"; path = "third_party/uidevice-extension/UIDevice-IOKitExtensions.h"; sourceTree = "<group>"; };
+		8BC5D5EC1EAF4541008FD1A8 /* UIDevice-IOKitExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice-IOKitExtensions.m"; path = "third_party/uidevice-extension/UIDevice-IOKitExtensions.m"; sourceTree = "<group>"; };
+		8BC5D5ED1EAF4541008FD1A8 /* UIDevice-Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice-Orientation.h"; path = "third_party/uidevice-extension/UIDevice-Orientation.h"; sourceTree = "<group>"; };
+		8BC5D5EE1EAF4541008FD1A8 /* UIDevice-Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice-Orientation.m"; path = "third_party/uidevice-extension/UIDevice-Orientation.m"; sourceTree = "<group>"; };
+		8BC5D5EF1EAF4541008FD1A8 /* UIDevice-Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice-Reachability.h"; path = "third_party/uidevice-extension/UIDevice-Reachability.h"; sourceTree = "<group>"; };
+		8BC5D5F01EAF4541008FD1A8 /* UIDevice-Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice-Reachability.m"; path = "third_party/uidevice-extension/UIDevice-Reachability.m"; sourceTree = "<group>"; };
+		8BC5D5FB1EAF46F1008FD1A8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8BC5D5FD1EAF479D008FD1A8 /* wwanconnect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wwanconnect.c; path = "third_party/uidevice-extension/wwanconnect.c"; sourceTree = "<group>"; };
+		8BC5D5FE1EAF479D008FD1A8 /* wwanconnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wwanconnect.h; path = "third_party/uidevice-extension/wwanconnect.h"; sourceTree = "<group>"; };
+		8BF1CD121EAF590200C11F00 /* IOKitKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOKitKeys.h; path = third_party/IOKit/IOKitKeys.h; sourceTree = "<group>"; };
+		8BF1CD131EAF590200C11F00 /* IOKitLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOKitLib.h; path = third_party/IOKit/IOKitLib.h; sourceTree = "<group>"; };
+		8BF1CD141EAF590200C11F00 /* IOMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOMessage.h; path = third_party/IOKit/IOMessage.h; sourceTree = "<group>"; };
+		8BF1CD151EAF590200C11F00 /* IOReturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOReturn.h; path = third_party/IOKit/IOReturn.h; sourceTree = "<group>"; };
+		8BF1CD161EAF590200C11F00 /* IOTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOTypes.h; path = third_party/IOKit/IOTypes.h; sourceTree = "<group>"; };
+		8BF1CD171EAF590200C11F00 /* OSKext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OSKext.h; path = third_party/IOKit/OSKext.h; sourceTree = "<group>"; };
+		8BF1CD181EAF590200C11F00 /* OSMessageNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OSMessageNotification.h; path = third_party/IOKit/OSMessageNotification.h; sourceTree = "<group>"; };
+		8BF1CD271EAF5C2200C11F00 /* IOKit.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = IOKit.tbd; path = third_party/IOKit.tbd; sourceTree = "<group>"; };
+		8BF1CD291EAF610F00C11F00 /* app_flow.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = app_flow.mm; sourceTree = "<group>"; };
+		8BF1CD2B1EAF62A200C11F00 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = third_party/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BC5D5B41EAF3C2E008FD1A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BF1CD2C1EAF62A200C11F00 /* libsubstrate.dylib in Frameworks */,
+				8BF1CD281EAF5C2200C11F00 /* IOKit.tbd in Frameworks */,
+				8BC5D5FC1EAF46F1008FD1A8 /* SystemConfiguration.framework in Frameworks */,
+				8BC5D5E41EAF41BA008FD1A8 /* CoreTelephony.framework in Frameworks */,
+				8BC5D5E21EAF3DEE008FD1A8 /* AdSupport.framework in Frameworks */,
+				8BC5D5E01EAF3DCF008FD1A8 /* UIKit.framework in Frameworks */,
+				8BC5D5BC1EAF3C2E008FD1A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BC5D5AD1EAF3C2E008FD1A8 = {
+			isa = PBXGroup;
+			children = (
+				8BC5D5E51EAF451E008FD1A8 /* third_party */,
+				8BC5D5BD1EAF3C2E008FD1A8 /* auto_click */,
+				8BC5D5BA1EAF3C2E008FD1A8 /* Frameworks */,
+				8BC5D5B91EAF3C2E008FD1A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BC5D5B91EAF3C2E008FD1A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BC5D5B81EAF3C2E008FD1A8 /* auto_click.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BC5D5BA1EAF3C2E008FD1A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BF1CD2B1EAF62A200C11F00 /* libsubstrate.dylib */,
+				8BF1CD271EAF5C2200C11F00 /* IOKit.tbd */,
+				8BC5D5FB1EAF46F1008FD1A8 /* SystemConfiguration.framework */,
+				8BC5D5E31EAF41B9008FD1A8 /* CoreTelephony.framework */,
+				8BC5D5E11EAF3DEE008FD1A8 /* AdSupport.framework */,
+				8BC5D5DF1EAF3DCF008FD1A8 /* UIKit.framework */,
+				8BC5D5BB1EAF3C2E008FD1A8 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BC5D5BD1EAF3C2E008FD1A8 /* auto_click */ = {
+			isa = PBXGroup;
+			children = (
+				8BC5D5DE1EAF3D95008FD1A8 /* src */,
+				8BC5D5BE1EAF3C2E008FD1A8 /* Package */,
+				8BC5D5C21EAF3C2E008FD1A8 /* Supporting Files */,
+			);
+			path = auto_click;
+			sourceTree = "<group>";
+		};
+		8BC5D5BE1EAF3C2E008FD1A8 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				8BC5D5BF1EAF3C2E008FD1A8 /* DEBIAN */,
+				8BC5D5C81EAF3C2E008FD1A8 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		8BC5D5BF1EAF3C2E008FD1A8 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				8BC5D5C01EAF3C2E008FD1A8 /* control.txt */,
+				8BC5D5C11EAF3C2E008FD1A8 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		8BC5D5C21EAF3C2E008FD1A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BC5D5C31EAF3C2E008FD1A8 /* PackageVersion.plist */,
+				8BC5D5C41EAF3C2E008FD1A8 /* auto_click-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BC5D5C81EAF3C2E008FD1A8 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				8BC5D5C91EAF3C2E008FD1A8 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		8BC5D5C91EAF3C2E008FD1A8 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				8BC5D5CA1EAF3C2E008FD1A8 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		8BC5D5CA1EAF3C2E008FD1A8 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				8BC5D5CB1EAF3C2E008FD1A8 /* auto_click.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		8BC5D5DE1EAF3D95008FD1A8 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8BF1CD291EAF610F00C11F00 /* app_flow.mm */,
+				8BC5D5D21EAF3D3C008FD1A8 /* app_clear_policy.h */,
+				8BC5D5D11EAF3D3C008FD1A8 /* app_flow.xm */,
+				8BC5D5D71EAF3D3C008FD1A8 /* OpenUDID.m */,
+				8BC5D5D51EAF3D3C008FD1A8 /* NSTask.h */,
+				8BC5D5D31EAF3D3C008FD1A8 /* app_clear_policy.m */,
+				8BC5D5D61EAF3D3C008FD1A8 /* OpenUDID.h */,
+				8BC5D5D41EAF3D3C008FD1A8 /* app_flow_policy.m */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		8BC5D5E51EAF451E008FD1A8 /* third_party */ = {
+			isa = PBXGroup;
+			children = (
+				8BF1CD101EAF58F200C11F00 /* iokit */,
+				8BC5D5E61EAF4530008FD1A8 /* uidevice-extension */,
+			);
+			name = third_party;
+			sourceTree = "<group>";
+		};
+		8BC5D5E61EAF4530008FD1A8 /* uidevice-extension */ = {
+			isa = PBXGroup;
+			children = (
+				8BC5D5FD1EAF479D008FD1A8 /* wwanconnect.c */,
+				8BC5D5FE1EAF479D008FD1A8 /* wwanconnect.h */,
+				8BC5D5E71EAF4541008FD1A8 /* UIDevice-Capabilities.h */,
+				8BC5D5E81EAF4541008FD1A8 /* UIDevice-Capabilities.m */,
+				8BC5D5E91EAF4541008FD1A8 /* UIDevice-Hardware.h */,
+				8BC5D5EA1EAF4541008FD1A8 /* UIDevice-Hardware.m */,
+				8BC5D5EB1EAF4541008FD1A8 /* UIDevice-IOKitExtensions.h */,
+				8BC5D5EC1EAF4541008FD1A8 /* UIDevice-IOKitExtensions.m */,
+				8BC5D5ED1EAF4541008FD1A8 /* UIDevice-Orientation.h */,
+				8BC5D5EE1EAF4541008FD1A8 /* UIDevice-Orientation.m */,
+				8BC5D5EF1EAF4541008FD1A8 /* UIDevice-Reachability.h */,
+				8BC5D5F01EAF4541008FD1A8 /* UIDevice-Reachability.m */,
+			);
+			name = "uidevice-extension";
+			sourceTree = "<group>";
+		};
+		8BF1CD101EAF58F200C11F00 /* iokit */ = {
+			isa = PBXGroup;
+			children = (
+				8BF1CD121EAF590200C11F00 /* IOKitKeys.h */,
+				8BF1CD131EAF590200C11F00 /* IOKitLib.h */,
+				8BF1CD141EAF590200C11F00 /* IOMessage.h */,
+				8BF1CD151EAF590200C11F00 /* IOReturn.h */,
+				8BF1CD161EAF590200C11F00 /* IOTypes.h */,
+				8BF1CD171EAF590200C11F00 /* OSKext.h */,
+				8BF1CD181EAF590200C11F00 /* OSMessageNotification.h */,
+			);
+			name = iokit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8BC5D5B51EAF3C2E008FD1A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BC5D5DB1EAF3D3C008FD1A8 /* NSTask.h in Headers */,
+				8BF1CD1A1EAF590200C11F00 /* IOKitKeys.h in Headers */,
+				8BC5D5F91EAF4541008FD1A8 /* UIDevice-Reachability.h in Headers */,
+				8BF1CD1B1EAF590200C11F00 /* IOKitLib.h in Headers */,
+				8BC5D5D81EAF3D3C008FD1A8 /* app_clear_policy.h in Headers */,
+				8BC5D5F71EAF4541008FD1A8 /* UIDevice-Orientation.h in Headers */,
+				8BF1CD1D1EAF590200C11F00 /* IOReturn.h in Headers */,
+				8BC5D5F31EAF4541008FD1A8 /* UIDevice-Hardware.h in Headers */,
+				8BC5D6001EAF479D008FD1A8 /* wwanconnect.h in Headers */,
+				8BF1CD1E1EAF590200C11F00 /* IOTypes.h in Headers */,
+				8BF1CD201EAF590200C11F00 /* OSMessageNotification.h in Headers */,
+				8BC5D5F11EAF4541008FD1A8 /* UIDevice-Capabilities.h in Headers */,
+				8BF1CD1F1EAF590200C11F00 /* OSKext.h in Headers */,
+				8BC5D5DC1EAF3D3C008FD1A8 /* OpenUDID.h in Headers */,
+				8BC5D5F51EAF4541008FD1A8 /* UIDevice-IOKitExtensions.h in Headers */,
+				8BF1CD1C1EAF590200C11F00 /* IOMessage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8BC5D5B71EAF3C2E008FD1A8 /* auto_click */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BC5D5CE1EAF3C2E008FD1A8 /* Build configuration list for PBXNativeTarget "auto_click" */;
+			buildPhases = (
+				8BC5D5B21EAF3C2E008FD1A8 /* ShellScript */,
+				8BC5D5B31EAF3C2E008FD1A8 /* Sources */,
+				8BC5D5B41EAF3C2E008FD1A8 /* Frameworks */,
+				8BC5D5B51EAF3C2E008FD1A8 /* Headers */,
+				8BC5D5B61EAF3C2E008FD1A8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = auto_click;
+			productName = auto_click;
+			productReference = 8BC5D5B81EAF3C2E008FD1A8 /* auto_click.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BC5D5AE1EAF3C2E008FD1A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					8BC5D5B71EAF3C2E008FD1A8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9J9K2QW6UF;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8BC5D5B11EAF3C2E008FD1A8 /* Build configuration list for PBXProject "auto_click" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8BC5D5AD1EAF3C2E008FD1A8;
+			productRefGroup = 8BC5D5B91EAF3C2E008FD1A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BC5D5B71EAF3C2E008FD1A8 /* auto_click */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8BC5D5B21EAF3C2E008FD1A8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		8BC5D5B61EAF3C2E008FD1A8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BC5D5B31EAF3C2E008FD1A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BC5D5F61EAF4541008FD1A8 /* UIDevice-IOKitExtensions.m in Sources */,
+				8BC5D5DD1EAF3D3C008FD1A8 /* OpenUDID.m in Sources */,
+				8BC5D5D91EAF3D3C008FD1A8 /* app_clear_policy.m in Sources */,
+				8BC5D5F81EAF4541008FD1A8 /* UIDevice-Orientation.m in Sources */,
+				8BC5D5F41EAF4541008FD1A8 /* UIDevice-Hardware.m in Sources */,
+				8BF1CD2A1EAF610F00C11F00 /* app_flow.mm in Sources */,
+				8BC5D5DA1EAF3D3C008FD1A8 /* app_flow_policy.m in Sources */,
+				8BC5D5FA1EAF4541008FD1A8 /* UIDevice-Reachability.m in Sources */,
+				8BC5D5F21EAF4541008FD1A8 /* UIDevice-Capabilities.m in Sources */,
+				8BC5D5FF1EAF479D008FD1A8 /* wwanconnect.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8BC5D5CC1EAF3C2E008FD1A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ent.xml;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 9J9K2QW6UF;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		8BC5D5CD1EAF3C2E008FD1A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ent.xml;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 9J9K2QW6UF;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		8BC5D5CF1EAF3C2E008FD1A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_ENTITLEMENTS = ent.xml;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9J9K2QW6UF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/third_party",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "auto_click/auto_click-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = SUBSTRATE_BUILD;
+				HEADER_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/include/**",
+					"$(SRCROOT)/third_party",
+				);
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/third_party/IOKit.framework",
+					"$(PROJECT_DIR)/third_party",
+					"$(PROJECT_DIR)/third_party/lib",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				iOSOpenDevBuildPackageOnAnyBuild = YES;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = NO;
+			};
+			name = Debug;
+		};
+		8BC5D5D01EAF3C2E008FD1A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_ENTITLEMENTS = ent.xml;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9J9K2QW6UF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/third_party",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "auto_click/auto_click-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = SUBSTRATE_BUILD;
+				HEADER_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/include/**",
+					"$(SRCROOT)/third_party",
+				);
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/third_party/IOKit.framework",
+					"$(PROJECT_DIR)/third_party",
+					"$(PROJECT_DIR)/third_party/lib",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				iOSOpenDevBuildPackageOnAnyBuild = YES;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BC5D5B11EAF3C2E008FD1A8 /* Build configuration list for PBXProject "auto_click" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BC5D5CC1EAF3C2E008FD1A8 /* Debug */,
+				8BC5D5CD1EAF3C2E008FD1A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BC5D5CE1EAF3C2E008FD1A8 /* Build configuration list for PBXNativeTarget "auto_click" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BC5D5CF1EAF3C2E008FD1A8 /* Debug */,
+				8BC5D5D01EAF3C2E008FD1A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BC5D5AE1EAF3C2E008FD1A8 /* Project object */;
+}

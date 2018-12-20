@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B51E68E1EB075F000CE1F35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B51E68D1EB075F000CE1F35 /* main.m */; };
+		8B51E6911EB075F000CE1F35 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B51E6901EB075F000CE1F35 /* AppDelegate.m */; };
+		8B51E6941EB075F000CE1F35 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B51E6931EB075F000CE1F35 /* ViewController.m */; };
+		8B51E6971EB075F000CE1F35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B51E6951EB075F000CE1F35 /* Main.storyboard */; };
+		8B51E6991EB075F000CE1F35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B51E6981EB075F000CE1F35 /* Assets.xcassets */; };
+		8B51E69C1EB075F000CE1F35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B51E69A1EB075F000CE1F35 /* LaunchScreen.storyboard */; };
+		8B51E6A81EB076AB00CE1F35 /* libsubstrate_arm64.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B51E6A61EB076AB00CE1F35 /* libsubstrate_arm64.dylib */; };
+		8B51E6A91EB076AB00CE1F35 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B51E6A71EB076AB00CE1F35 /* libsubstrate.dylib */; };
+		8B51E6CC1EB082B500CE1F35 /* UIDevice-IOKitExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B51E6C31EB082B500CE1F35 /* UIDevice-IOKitExtensions.m */; };
+		8B51E6CF1EB082B500CE1F35 /* wwanconnect.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B51E6C81EB082B500CE1F35 /* wwanconnect.c */; };
+		8B51E6D11EB082D300CE1F35 /* IOKit.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B51E6D01EB082D300CE1F35 /* IOKit.tbd */; };
+		8B51E6D31EB086A900CE1F35 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B51E6D21EB086A900CE1F35 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8B51E6891EB075F000CE1F35 /* AUClick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AUClick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B51E68D1EB075F000CE1F35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8B51E68F1EB075F000CE1F35 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8B51E6901EB075F000CE1F35 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8B51E6921EB075F000CE1F35 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8B51E6931EB075F000CE1F35 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8B51E6961EB075F000CE1F35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B51E6981EB075F000CE1F35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B51E69B1EB075F000CE1F35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B51E69D1EB075F000CE1F35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B51E6A61EB076AB00CE1F35 /* libsubstrate_arm64.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate_arm64.dylib; path = third_party/lib/libsubstrate_arm64.dylib; sourceTree = "<group>"; };
+		8B51E6A71EB076AB00CE1F35 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = third_party/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+		8B51E6C21EB082B500CE1F35 /* UIDevice-IOKitExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice-IOKitExtensions.h"; path = "third_party/uidevice-extension/UIDevice-IOKitExtensions.h"; sourceTree = "<group>"; };
+		8B51E6C31EB082B500CE1F35 /* UIDevice-IOKitExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice-IOKitExtensions.m"; path = "third_party/uidevice-extension/UIDevice-IOKitExtensions.m"; sourceTree = "<group>"; };
+		8B51E6C81EB082B500CE1F35 /* wwanconnect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wwanconnect.c; path = "third_party/uidevice-extension/wwanconnect.c"; sourceTree = "<group>"; };
+		8B51E6C91EB082B500CE1F35 /* wwanconnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wwanconnect.h; path = "third_party/uidevice-extension/wwanconnect.h"; sourceTree = "<group>"; };
+		8B51E6D01EB082D300CE1F35 /* IOKit.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = IOKit.tbd; path = third_party/IOKit.tbd; sourceTree = "<group>"; };
+		8B51E6D21EB086A900CE1F35 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B51E6861EB075F000CE1F35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B51E6D31EB086A900CE1F35 /* UIKit.framework in Frameworks */,
+				8B51E6D11EB082D300CE1F35 /* IOKit.tbd in Frameworks */,
+				8B51E6A81EB076AB00CE1F35 /* libsubstrate_arm64.dylib in Frameworks */,
+				8B51E6A91EB076AB00CE1F35 /* libsubstrate.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B51E6801EB075F000CE1F35 = {
+			isa = PBXGroup;
+			children = (
+				8B51E6A31EB0769100CE1F35 /* third_party */,
+				8B51E68B1EB075F000CE1F35 /* AUClick */,
+				8B51E68A1EB075F000CE1F35 /* Products */,
+				8B51E6A51EB076AB00CE1F35 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8B51E68A1EB075F000CE1F35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B51E6891EB075F000CE1F35 /* AUClick.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B51E68B1EB075F000CE1F35 /* AUClick */ = {
+			isa = PBXGroup;
+			children = (
+				8B51E68F1EB075F000CE1F35 /* AppDelegate.h */,
+				8B51E6901EB075F000CE1F35 /* AppDelegate.m */,
+				8B51E6921EB075F000CE1F35 /* ViewController.h */,
+				8B51E6931EB075F000CE1F35 /* ViewController.m */,
+				8B51E6951EB075F000CE1F35 /* Main.storyboard */,
+				8B51E6981EB075F000CE1F35 /* Assets.xcassets */,
+				8B51E69A1EB075F000CE1F35 /* LaunchScreen.storyboard */,
+				8B51E69D1EB075F000CE1F35 /* Info.plist */,
+				8B51E68C1EB075F000CE1F35 /* Supporting Files */,
+			);
+			path = AUClick;
+			sourceTree = "<group>";
+		};
+		8B51E68C1EB075F000CE1F35 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B51E68D1EB075F000CE1F35 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B51E6A31EB0769100CE1F35 /* third_party */ = {
+			isa = PBXGroup;
+			children = (
+				8B51E6BD1EB082A400CE1F35 /* uidevice-extension */,
+				8B51E6A41EB0769700CE1F35 /* lib */,
+			);
+			name = third_party;
+			sourceTree = "<group>";
+		};
+		8B51E6A41EB0769700CE1F35 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		8B51E6A51EB076AB00CE1F35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B51E6D21EB086A900CE1F35 /* UIKit.framework */,
+				8B51E6D01EB082D300CE1F35 /* IOKit.tbd */,
+				8B51E6A61EB076AB00CE1F35 /* libsubstrate_arm64.dylib */,
+				8B51E6A71EB076AB00CE1F35 /* libsubstrate.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B51E6BD1EB082A400CE1F35 /* uidevice-extension */ = {
+			isa = PBXGroup;
+			children = (
+				8B51E6C21EB082B500CE1F35 /* UIDevice-IOKitExtensions.h */,
+				8B51E6C31EB082B500CE1F35 /* UIDevice-IOKitExtensions.m */,
+				8B51E6C81EB082B500CE1F35 /* wwanconnect.c */,
+				8B51E6C91EB082B500CE1F35 /* wwanconnect.h */,
+			);
+			name = "uidevice-extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B51E6881EB075F000CE1F35 /* AUClick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B51E6A01EB075F000CE1F35 /* Build configuration list for PBXNativeTarget "AUClick" */;
+			buildPhases = (
+				8B51E6851EB075F000CE1F35 /* Sources */,
+				8B51E6861EB075F000CE1F35 /* Frameworks */,
+				8B51E6871EB075F000CE1F35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AUClick;
+			productName = AUClick;
+			productReference = 8B51E6891EB075F000CE1F35 /* AUClick.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B51E6811EB075F000CE1F35 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "紫贝壳";
+				TargetAttributes = {
+					8B51E6881EB075F000CE1F35 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9J9K2QW6UF;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8B51E6841EB075F000CE1F35 /* Build configuration list for PBXProject "AUClick" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B51E6801EB075F000CE1F35;
+			productRefGroup = 8B51E68A1EB075F000CE1F35 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B51E6881EB075F000CE1F35 /* AUClick */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B51E6871EB075F000CE1F35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B51E69C1EB075F000CE1F35 /* LaunchScreen.storyboard in Resources */,
+				8B51E6991EB075F000CE1F35 /* Assets.xcassets in Resources */,
+				8B51E6971EB075F000CE1F35 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B51E6851EB075F000CE1F35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B51E6CC1EB082B500CE1F35 /* UIDevice-IOKitExtensions.m in Sources */,
+				8B51E6941EB075F000CE1F35 /* ViewController.m in Sources */,
+				8B51E6911EB075F000CE1F35 /* AppDelegate.m in Sources */,
+				8B51E68E1EB075F000CE1F35 /* main.m in Sources */,
+				8B51E6CF1EB082B500CE1F35 /* wwanconnect.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8B51E6951EB075F000CE1F35 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B51E6961EB075F000CE1F35 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B51E69A1EB075F000CE1F35 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B51E69B1EB075F000CE1F35 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B51E69E1EB075F000CE1F35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = ent.xml;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8B51E69F1EB075F000CE1F35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = ent.xml;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B51E6A11EB075F000CE1F35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ent.xml;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9J9K2QW6UF;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/third_party/";
+				INFOPLIST_FILE = AUClick/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/third_party/lib",
+					"$(PROJECT_DIR)/third_party",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zbk.none.AUClick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8B51E6A21EB075F000CE1F35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ent.xml;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9J9K2QW6UF;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/third_party/";
+				INFOPLIST_FILE = AUClick/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/third_party/lib",
+					"$(PROJECT_DIR)/third_party",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zbk.none.AUClick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B51E6841EB075F000CE1F35 /* Build configuration list for PBXProject "AUClick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B51E69E1EB075F000CE1F35 /* Debug */,
+				8B51E69F1EB075F000CE1F35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B51E6A01EB075F000CE1F35 /* Build configuration list for PBXNativeTarget "AUClick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B51E6A11EB075F000CE1F35 /* Debug */,
+				8B51E6A21EB075F000CE1F35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B51E6811EB075F000CE1F35 /* Project object */;
+}
